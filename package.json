@@ -1,0 +1,19 @@
+{
+  "name": "fancyBank",
+  "version": "0.0.2",
+  "description": "Fancy Open Bank API",
+  "main": "./index.js",
+  "engines": {
+	"node": "0.10.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rushdan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.9.3",
+    "express": "^4.10.2",
+    "mongoose": "^3.8.19"
+  }
+}
