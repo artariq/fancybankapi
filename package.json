@@ -1,6 +1,6 @@
 {
   "name": "fancyBank",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Fancy Open Bank API",
   "main": "./index.js",
   "engines": {
@@ -8,15 +8,36 @@
   },
   "scripts": {
     "test": "mocha --recursive",
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
   },
   "author": "Rushdan",
-  "license": "ISC",
-  "repository": "https://github.com/artariq/fancybankapi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artariq/fancybankapi"
+  },
+  "bugs": {
+    "url": "https://github.com/artariq/fancybankapi/issues",
+    "email": ""
+  },
   "dependencies": {
     "body-parser": "^1.9.3",
     "express": "^4.10.2",
     "faker": "^2.1.0",
     "mongoose": "^3.8.19"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "grunt": "^0.4.5",
+    "grunt-banner": "^0.2.3",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jsbeautifier": "^0.2.7",
+    "grunt-jsdoc": "^0.5.7",
+    "grunt-newer": "^0.8.0",
+    "grunt-simple-mocha": "^0.4.0",
+    "jshint-stylish": "^1.0.0",
+    "mocha": "^2.0.1"
   }
 }

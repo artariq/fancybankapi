@@ -7,7 +7,7 @@ var users = require('./api/user/user'); //routes are defined here
 var app = express(); //Create the Express app
 
 //connect to mongodb
-var env = process.env.NODE_ENV || 'development'
+var env = process.env.NODE_ENV || 'development';
 if(env === 'production'){
  var dburi = 'mongodb://artariq:chitral@ds047040.mongolab.com:47040/rushiesmongodb';
 } else{

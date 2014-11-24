@@ -32,7 +32,7 @@ router.route('/users/:id').put(function(req, res) {
 			return res.send(err);
 		}
 
-		for (prop in req.body) {
+		for (var prop in req.body) {
 			user[prop] = req.body[prop];
 		}
 
