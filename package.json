@@ -4,16 +4,19 @@
   "description": "Fancy Open Bank API",
   "main": "./index.js",
   "engines": {
-	"node": "0.10.x"
+    "node": "0.10.x"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --recursive",
+    "start": "node server/index.js"
   },
   "author": "Rushdan",
   "license": "ISC",
+  "repository": "https://github.com/artariq/fancybankapi",
   "dependencies": {
     "body-parser": "^1.9.3",
     "express": "^4.10.2",
+    "faker": "^2.1.0",
     "mongoose": "^3.8.19"
   }
 }
