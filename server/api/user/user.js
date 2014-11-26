@@ -1,15 +1,16 @@
 var User = require('./user.model');
 var express = require('express');
 var router = express.Router();
+
 /**
  * @description this is the user route
- * @parmas {object} req
- * @parmas {object} res
- * @return json
+ * @param {object} req
+ * @param {object} res
+ * @returns json
  */
 
+
 router.route('/users').get(function(req, res) {
-  console.log('/users called' + req);
 	User.find(function(err, users) {
 		if(err) {
 			return res.send(err);
