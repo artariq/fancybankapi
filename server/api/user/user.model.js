@@ -1,6 +1,10 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
  
+/**
+ * @description define User Schema object
+ *
+ */
 var userSchema = new Schema({
   first_name: String,
   last_name: String,
