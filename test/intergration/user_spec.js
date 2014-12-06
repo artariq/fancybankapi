@@ -10,7 +10,8 @@ describe('GET /users', function(){
   it('responds with json', function(done){
     request(app)
     .get('/')
-    .expect('Accept', 'application/json');
+    .expect('Accept', 'application/json')
+    .expect(200);
     done();
   });
 });
