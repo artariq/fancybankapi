@@ -27,7 +27,7 @@ module.exports = function (grunt) {
     },
 		simplemocha: {
 			options: {
-				globals: ['should', 'navigator'],
+				globals: ['expect', 'navigator'],
 				timeout: 3000,
 				ignoreLeaks: false,
 				ui: 'bdd',

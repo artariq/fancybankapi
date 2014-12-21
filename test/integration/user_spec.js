@@ -1,18 +1,25 @@
-var path = require('path');
-var request = require('supertest');
-var app = require(path.resolve(process.cwd(),'server/index'));
+var path = require('path'),
+    request = require('supertest'),
+    app  = require(path.resolve(process.cwd(),'server/app.js'));
 
 
-// TODO go to /users get a response of 200 and all users in JSON
-// also if err then send err
-
+//TODO go to /users get a response of 200 and all users in 
+//json also if err send err
 
 describe('GET /users', function(){
-  it('respond with json', function(done){
+  it('responds with json', function(done){
     request(app)
-      .get('/users')
-      .set('Accept', 'application/json')
-      .expect('Content-Type', /json/)
-      .expect(200, done);
-  })
-})
+    .get('/')
+    .expect('Accept', 'application/json')
+    .expect(200);
+    done();
+  });
+});
+
+describe('status code 200', function(){
+  it('should return a 200 response', function(done){
+    request(app)
+    .get('/')
+    .expect(200, done);
+  });
+});
