@@ -15,8 +15,6 @@ describe('GET /users', function(){
     done();
   });
 });
-<<<<<<< HEAD
-=======
 
 describe('status code 200', function(){
   it('should return a 200 response', function(done){
@@ -25,4 +23,4 @@ describe('status code 200', function(){
     .expect(200, done);
   });
 });
->>>>>>> master
+
